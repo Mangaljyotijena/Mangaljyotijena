@@ -65,8 +65,8 @@ My expertise spans both backend and frontend technologies, blending strong engin
 
 ### 🌐 Connect with Me
 
-- [LinkedIn](#) <!-- Replace with your actual LinkedIn URL -->
-- [GitHub](#) <!-- Replace with your actual GitHub Profile URL -->
+- [LinkedIn](https://www.linkedin.com/in/mangaljyotijena/) <!-- Replace with your actual LinkedIn URL -->
+- [GitHub](https://github.com/Mangaljyotijena) <!-- Replace with your actual GitHub Profile URL -->
 - [Portfolio](#) <!-- Optional: add if you have one -->
 
 ---
@@ -77,10 +77,6 @@ My expertise spans both backend and frontend technologies, blending strong engin
 ---
 
 ### 📌 GitHub Profile Info
-
-**Mangaljyotijena/Mangaljyotijena** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
 
 - 🔭 I’m currently working on:  
   A modular data connector app with ER diagram visualization and secure login.
@@ -98,7 +94,7 @@ Here are some ideas to get you started:
   Full-stack development, CI/CD automation, secure app deployment.
 
 - 📫 How to reach me:  
-  [LinkedIn](#) | [Email](mailto:your-email@example.com) | [Portfolio](#)
+  [LinkedIn](#) | [Email](mailto:Mangaljyoti95@gmail.com) | [Portfolio](#)
 
 - 😄 Pronouns:  
   He/Him
