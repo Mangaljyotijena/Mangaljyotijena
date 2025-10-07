@@ -254,4 +254,56 @@ document.addEventListener('DOMContentLoaded', function() {
             section.classList.add('fade-in-up');
         }
     });
+
+    // Floating animation for interest icons
+    document.querySelectorAll('.interest-icon').forEach(icon => {
+        icon.style.animation = 'float 3s ease-in-out infinite';
+    });
+
+    // Add floating keyframes
+    const style = document.createElement('style');
+    style.textContent = `
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+    `;
+    document.head.appendChild(style);
+
+    // Code snippet copy functionality
+    const codeContainer = document.querySelector('.code-container');
+    if (codeContainer) {
+        const copyButton = document.createElement('button');
+        copyButton.innerHTML = '<i class="fas fa-copy"></i>';
+        copyButton.style.cssText = `
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        `;
+        copyButton.addEventListener('mouseenter', () => {
+            copyButton.style.background = 'rgba(255, 255, 255, 0.2)';
+        });
+        copyButton.addEventListener('mouseleave', () => {
+            copyButton.style.background = 'rgba(255, 255, 255, 0.1)';
+        });
+        copyButton.addEventListener('click', () => {
+            const code = codeContainer.querySelector('code').textContent;
+            navigator.clipboard.writeText(code).then(() => {
+                copyButton.innerHTML = '<i class="fas fa-check"></i>';
+                setTimeout(() => {
+                    copyButton.innerHTML = '<i class="fas fa-copy"></i>';
+                }, 2000);
+            });
+        });
+        codeContainer.style.position = 'relative';
+        codeContainer.appendChild(copyButton);
+    }
 });
